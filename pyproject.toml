@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "asreview-simulation-my-plugin"
+version = "0.1.0"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "click ~= 8.0",
+]
+description = "Plugin for asreview-simulate"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+]
+
+[project.entry-points."asreview_simulationcontrib.subcommands"]
+ofn_custom_subcommand = "asreview_simulationcontrib.my_plugin.cli.ofn_custom_subcommand:ofn_custom_subcommand"
+
+[project.entry-points."asreview_simulationcontrib.funcmaps.get_default_params"]
+funcmap_get_default_params = "asreview_simulationcontrib.my_plugin.funcmaps.get_default_params:funcmap_get_default_params"
+
+[tool.setuptools.packages.find]
+where = ["src"]
