@@ -9,6 +9,7 @@ readme = "README.md"
 requires-python = ">=3.8"
 dependencies = [
     "click ~= 8.0",
+    "hyperopt"
 ]
 description = "Plugin for asreview-simulate"
 
@@ -17,11 +18,8 @@ dev = [
     "pytest",
 ]
 
-[project.entry-points."asreview_simulationcontrib.subcommands"]
-ofn_custom_subcommand = "asreview_simulationcontrib.my_plugin.cli.ofn_custom_subcommand:ofn_custom_subcommand"
-
-[project.entry-points."asreview_simulationcontrib.funcmaps.get_default_params"]
-funcmap_get_default_params = "asreview_simulationcontrib.my_plugin.funcmaps.get_default_params:funcmap_get_default_params"
+[project.entry-points."asreview_simulationcontrib.quads"]
+ofn-custom = "asreview_simulationcontrib.my_plugin.ofn_custom_plugin_quad:ofn_custom_plugin_quad"
 
 [tool.setuptools.packages.find]
 where = ["src"]
