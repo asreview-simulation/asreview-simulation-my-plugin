@@ -19,7 +19,9 @@ dev = [
 ]
 
 [project.entry-points."asreview_simulationcontrib.quads"]
+bal-custom = "asreview_simulationcontrib.my_plugin.bal_custom_plugin_quad:bal_custom_plugin_quad"
 ofn-custom = "asreview_simulationcontrib.my_plugin.ofn_custom_plugin_quad:ofn_custom_plugin_quad"
+
 
 [tool.setuptools.packages.find]
 where = ["src"]
