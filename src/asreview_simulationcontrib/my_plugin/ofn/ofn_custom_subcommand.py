@@ -13,7 +13,7 @@ name = "ofn-custom"
     epilog=epilog,
     help="Configure the simulation to use an objective function from a plugin.",
     name=name,
-    short_help="Custom ofn from asreview-simulation-my-plugin",
+    short_help="Custom ofn model from asreview-simulation-my-plugin",
 )
 @click.option(
     "-f",

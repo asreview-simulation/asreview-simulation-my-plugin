@@ -17,7 +17,7 @@ name = "bal-custom"
     epilog=epilog,
     help="Configure the simulation to use a balancer from a plugin.",
     name=name,
-    short_help="Custom balancer from asreview-simulation-my-plugin",
+    short_help="Custom bal model from asreview-simulation-my-plugin",
 )
 @click.option(
     "--a",

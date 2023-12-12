@@ -21,6 +21,7 @@ dev = [
 [project.entry-points."asreview_simulationcontrib.quads"]
 bal-custom = "asreview_simulationcontrib.my_plugin.bal.bal_custom_plugin_quad:bal_custom_plugin_quad"
 clr-custom = "asreview_simulationcontrib.my_plugin.clr.clr_custom_plugin_quad:clr_custom_plugin_quad"
+fex-custom = "asreview_simulationcontrib.my_plugin.fex.fex_custom_plugin_quad:fex_custom_plugin_quad"
 ofn-custom = "asreview_simulationcontrib.my_plugin.ofn.ofn_custom_plugin_quad:ofn_custom_plugin_quad"
 
 

@@ -17,7 +17,7 @@ name = "clr-custom"
     epilog=epilog,
     help="Configure the simulation to use a classifier from a plugin.",
     name=name,
-    short_help="Custom classifier from asreview-simulation-my-plugin",
+    short_help="Custom clr model from asreview-simulation-my-plugin",
 )
 @click.option(
     "--alpha",
