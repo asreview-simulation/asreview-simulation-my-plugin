@@ -6,7 +6,7 @@ import click
 from asreviewcontrib.simulation.api import OneModelConfig
 from asreviewcontrib.simulation.api.extending import dont_reassign_bal_msg
 from asreviewcontrib.simulation.api.extending import epilog
-from asreview_simulationcontrib.my_plugin.bal_custom_params import bal_custom_params
+from asreview_simulationcontrib.my_plugin.bal.bal_custom_params import bal_custom_params
 
 
 default_params = bal_custom_params()

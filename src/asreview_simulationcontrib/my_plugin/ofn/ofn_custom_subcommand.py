@@ -2,7 +2,7 @@ import click
 from asreviewcontrib.simulation.api import OneModelConfig
 from asreviewcontrib.simulation.api.extending import dont_reassign_ofn_msg
 from asreviewcontrib.simulation.api.extending import epilog
-from asreview_simulationcontrib.my_plugin.ofn_custom_params import ofn_custom_params
+from asreview_simulationcontrib.my_plugin.ofn.ofn_custom_params import ofn_custom_params
 
 
 default_params = ofn_custom_params()
