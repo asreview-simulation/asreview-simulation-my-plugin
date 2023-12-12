@@ -1,8 +1,4 @@
-from typing import Any
-from typing import Dict
-
-
-def ofn_custom_params() -> Dict[str, Any]:
+def ofn_custom_params():
     return {
         "param_1": 17,
         "param_2": False,
