@@ -10,13 +10,13 @@ from asreview_simulationcontrib.my_plugin.fex.fex_custom_params import fex_custo
 
 
 default_params = fex_custom_params()
-name = "fex-custom"
+abbr = "fex-custom"
 
 
 @click.command(
     epilog=epilog,
     help="Configure the simulation to use a feature extractor from a plugin.",
-    name=name,
+    name=abbr,
     short_help="Custom fex model from asreview-simulation-my-plugin",
 )
 @click.option(
@@ -66,5 +66,5 @@ def fex_custom_subcommand(obj, force, ngram_max, split_ta, stop_words, use_keywo
         "stop_words": stop_words,
         "use_keywords": use_keywords,
     }
-    obj.config.fex = OneModelConfig(abbr=name, params=params)
+    obj.config.fex = OneModelConfig(abbr=abbr, params=params)
     obj.provided.fex = True

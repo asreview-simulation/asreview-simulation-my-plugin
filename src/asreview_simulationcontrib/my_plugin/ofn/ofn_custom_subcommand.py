@@ -6,13 +6,13 @@ from asreview_simulationcontrib.my_plugin.ofn.ofn_custom_params import ofn_custo
 
 
 default_params = ofn_custom_params()
-name = "ofn-custom"
+abbr = "ofn-custom"
 
 
 @click.command(
     epilog=epilog,
     help="Configure the simulation to use an objective function from a plugin.",
-    name=name,
+    name=abbr,
     short_help="Custom ofn model from asreview-simulation-my-plugin",
 )
 @click.option(
@@ -45,5 +45,5 @@ def ofn_custom_subcommand(obj, force, param_1, param_2):
         "param_1": param_1,
         "param_2": param_2,
     }
-    obj.config.ofn = OneModelConfig(abbr=name, params=params)
+    obj.config.ofn = OneModelConfig(abbr=abbr, params=params)
     obj.provided.ofn = True

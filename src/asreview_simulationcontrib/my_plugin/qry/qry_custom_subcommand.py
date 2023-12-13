@@ -10,13 +10,13 @@ from asreview_simulationcontrib.my_plugin.qry.qry_custom_params import qry_custo
 
 
 default_params = qry_custom_params()
-name = "qry-custom"
+abbr = "qry-custom"
 
 
 @click.command(
     epilog=epilog,
     help="Configure the simulation to use a query model from a plugin.",
-    name=name,
+    name=abbr,
     short_help="Custom qry model from asreview-simulation-my-plugin",
 )
 @click.option(
@@ -50,5 +50,5 @@ def qry_custom_subcommand(obj, force, fraction_max, n_instances):
         "fraction_max": fraction_max,
         "n_instances": n_instances,
     }
-    obj.config.qry = OneModelConfig(abbr=name, params=params)
+    obj.config.qry = OneModelConfig(abbr=abbr, params=params)
     obj.provided.qry = True

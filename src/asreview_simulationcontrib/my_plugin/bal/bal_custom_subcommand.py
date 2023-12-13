@@ -10,13 +10,13 @@ from asreview_simulationcontrib.my_plugin.bal.bal_custom_params import bal_custo
 
 
 default_params = bal_custom_params()
-name = "bal-custom"
+abbr = "bal-custom"
 
 
 @click.command(
     epilog=epilog,
     help="Configure the simulation to use a balancer from a plugin.",
-    name=name,
+    name=abbr,
     short_help="Custom bal model from asreview-simulation-my-plugin",
 )
 @click.option(
@@ -73,5 +73,5 @@ def bal_custom_subcommand(obj, a, alpha, b, beta, force):
         "b": b,
         "beta": beta,
     }
-    obj.config.bal = OneModelConfig(abbr=name, params=params)
+    obj.config.bal = OneModelConfig(abbr=abbr, params=params)
     obj.provided.bal = True

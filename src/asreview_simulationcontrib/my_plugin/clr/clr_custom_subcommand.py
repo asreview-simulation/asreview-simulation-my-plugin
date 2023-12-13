@@ -10,13 +10,13 @@ from asreview_simulationcontrib.my_plugin.clr.clr_custom_params import clr_custo
 
 
 default_params = clr_custom_params()
-name = "clr-custom"
+abbr = "clr-custom"
 
 
 @click.command(
     epilog=epilog,
     help="Configure the simulation to use a classifier from a plugin.",
-    name=name,
+    name=abbr,
     short_help="Custom clr model from asreview-simulation-my-plugin",
 )
 @click.option(
@@ -41,5 +41,5 @@ def clr_custom_subcommand(obj, alpha, force):
     params = {
         "alpha": alpha,
     }
-    obj.config.clr = OneModelConfig(abbr=name, params=params)
+    obj.config.clr = OneModelConfig(abbr=abbr, params=params)
     obj.provided.clr = True
