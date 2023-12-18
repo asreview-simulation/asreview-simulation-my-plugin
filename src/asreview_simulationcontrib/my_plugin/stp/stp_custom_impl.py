@@ -26,5 +26,8 @@ def stp_custom_impl(config: Config, as_data: ASReviewData):
         assert isinstance(n_included, int), "Expected n_included to be of type int"
         n_remaining = len(as_data) - n_excluded - n_included
     else:
-        raise ValueError("Unknown sampler.")
+        msg = f"Can't determine the number of prior samples for sampler '{config.sam.abbr}'" \
+              + ", proceeding as if the number of remaining records is equal to all the records."
+        print(msg)
+        n_remaining = len(as_data)
     return int(ceil(pct * n_remaining / n_instances / 100))
