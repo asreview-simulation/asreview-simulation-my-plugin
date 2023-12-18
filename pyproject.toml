@@ -24,6 +24,7 @@ clr-custom = "asreview_simulationcontrib.my_plugin.clr.clr_custom_plugin_quad:cl
 fex-custom = "asreview_simulationcontrib.my_plugin.fex.fex_custom_plugin_quad:fex_custom_plugin_quad"
 ofn-custom = "asreview_simulationcontrib.my_plugin.ofn.ofn_custom_plugin_quad:ofn_custom_plugin_quad"
 qry-custom = "asreview_simulationcontrib.my_plugin.qry.qry_custom_plugin_quad:qry_custom_plugin_quad"
+sam-custom = "asreview_simulationcontrib.my_plugin.sam.sam_custom_plugin_quad:sam_custom_plugin_quad"
 stp-custom = "asreview_simulationcontrib.my_plugin.stp.stp_custom_plugin_quad:stp_custom_plugin_quad"
 
 
